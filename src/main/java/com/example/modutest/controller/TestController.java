@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RequiredArgsConstructor
 @RequestMapping("/api")
 @RestControllerAdvice//전역 예외 처리
-public class TesterController {// 임시 테스트 컨트롤러로 오인때문에 Tester로 했습니다!
+public class TestController {// 임시 테스트 컨트롤러로 오인때문에 Tester로 했습니다!
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<?> handleNotFoundEntity(Exception e) {
